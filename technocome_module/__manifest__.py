@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Technocome Status Folder',
-    'version': '16.0',
+    'version': '17.0',
     'summary': '''Technocome,
         class,''',
     'description':
@@ -10,16 +10,15 @@
     'author': "Technocome Status Folder",
     'company': 'Technocome Status Folder',
     'price': 0,
-    'currency': 'USD',
-    'website': "https://www.nishan.com",
-    'depends': ['base', 'mail', 'board','sale'],  # 'web_domain_field'
+    'currency': 'CHF',
+    'website': "https://www.technochome.com",
+    'depends': ['base', 'mail', 'board','sale','hr_attendance','account'],
     'data': [
         'security/ir.model.access.csv',
         'data/send_mail.xml',
         'views/sale_order_inherit.xml',
         'views/status_folder.xml',
         'views/attendance_view.xml',
-
         'views/menus.xml',
 
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <record id="status_folder_view_tree" model="ir.ui.view">
             <field name="name">status_folder_view_tree</field>
             <field name="model">status.folder</field>
@@ -33,50 +32,40 @@
                     <header>
                         <button name="attente" class="btn btn-primary"
                                 type="object"
-                                states="attente"
                                 string="1er acompte reçu"/>
                         <button name="reception_a_compte" class="btn btn-info"
                                 type="object"
-                                states="reception_a_compte"
                                 string="A instruire"/>
 
                         <button name="instruire" class="btn btn-secondary"
                                 type="object"
                                 string="En cours instruction"
-                                states="instruire"
                         />
 
 
                         <button name="encours" class="btn btn-success"
                                 type="object"
-                                states="encours"
                                 string="Autorisations finalisées"
                         />
 
                         <button name="autorisations" class="btn btn-danger"
                                 type="object"
-                                states="autorisations"
                                 string="Autorisations octroyées"/>
 
                         <button name="octroyees" class="btn btn-warning"
                                 type="object"
-                                states="octroyees"
                                 string="Pose planifiée"/>
                         <button name="planifiee" class="btn btn-info"
                                 type="object"
-                                states="planifiee"
                                 string="Pose effectuée"/>
                         <button name="effectuee" class="btn btn-light"
                                 type="object"
-                                states="effectuee"
                                 string="Subvention en cours"/>
                         <button name="subvention_en_cours" class="btn btn-dark"
                                 type="object"
-                                states="subvention_en_cours"
                                 string="Subvention finalisee"/>
                         <button name="subvention_finalisee" class="btn btn-success"
                                 type="object"
-                                states="subvention_finalisee"
                                 string="Subvention finalisee"/>
 
                         <field name="state" widget="statusbar"
@@ -96,23 +85,32 @@
                             <page string="Document" name="document">
                                 <group>
                                     <field name="document_attach" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'attente')]}"/>
+                                           invisible="state != 'attente'"
+                                    />
                                     <field name="document_instruire" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'instruire')]}"/>
+                                           invisible="state != 'instruire'"
+                                    />
                                     <field name="document_encour" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'encours')]}"/>
+                                           invisible="state != 'encours'"
+                                    />
                                     <field name="document_autorisations" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'autorisations')]}"/>
+                                           invisible="state != 'autorisations'"
+                                    />
                                     <field name="document_octroyees" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'octroyees')]}"/>
+                                           invisible="state != 'octroyees'"
+                                    />
                                     <field name="document_planifiee" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'planifiee')]}"/>
+                                           invisible="state != 'planifiee'"
+                                    />
                                     <field name="document_effectuee" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'effectuee')]}"/>
+                                           invisible="state != 'effectuee'"
+                                    />
                                     <field name="document_subvention_en_cours" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'subvention en cours')]}"/>
+                                           invisible="state != 'subvention en cours'"
+                                    />
                                     <field name="document_subvention_finalisee" widget="many2many_binary"
-                                           attrs="{'invisible': [('state', '!=', 'subvention finalisee')]}"/>
+                                           invisible="state != 'subvention finalisee'"
+                                    />
                                 </group>
 
                             </page>

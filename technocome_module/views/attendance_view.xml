@@ -3,23 +3,13 @@
     <record id="view_hr_attendance_search_inherit" model="ir.ui.view">
         <field name="name">hr.attendance.search.inherit</field>
         <field name="model">hr.attendance</field>
-        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_filter"/> <!-- ID de la vue de recherche originale -->
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_filter"/>
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='check_in_filter']" position="after">
                <field name="employee_id" string="Collaborateur"/>
-                <field name="month" string="Month"/>
-                <field name="day" string="Day"/>
-<!--                <field name="date" string="Date" filter_domain="[('date', '>=', context_today()), ('date', '<=', context_today())]"/>-->
-<!--                <filter string="Semaine actuelle" domain="[('date', '>=', (context_today() - timedelta(days=context_today().weekday()))), ('date', '<=', (context_today() + timedelta(days=6 - context_today().weekday())))]"/>-->
-<!--                <filter string="Mois actuel" domain="[('date', '>=', (context_today().replace(day=1))), ('date', '<=', context_today())]"/>-->
-<!--                <group expand="1" string="Heures travaillées">-->
-<!--                    <filter string="Total Heures" domain="[('worked_hours', '&gt;', 0)]"/>-->
-<!--                </group>-->
+
             </xpath>
-              <group expand="0" string="Group By">
-                    <filter string="Attendance" name="group_by_day" domain="[]" context="{'group_by':'day'}"/>
-<!--                    <filter string="Mois" name="group_by_month" domain="[]" context="{'group_by':'month'}"/>-->
-                </group>
+
         </field>
     </record>
 </odoo>
