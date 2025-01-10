@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1b9b9d3-81e0-4ce8-a825-4f07657bb8d7" name="Changes" comment="update_code" />
+    <list default="true" id="c1b9b9d3-81e0-4ce8-a825-4f07657bb8d7" name="Changes" comment="add_module_hide menu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +27,11 @@
     "last_opened_file_path": "C:/Users/Randa Achour/PycharmProjects/projectodoo16/odoo/tichnocome_sale_update/folder_sale_model"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Randa Achour\PycharmProjects\projectodoo16\odoo\tichnocome_sale_update\folder_sale_model" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,7 +48,14 @@
       <option name="project" value="LOCAL" />
       <updated>1736499948970</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add_module_hide menu">
+      <created>1736500431369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736500431369</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -57,6 +71,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update_code" />
-    <option name="LAST_COMMIT_MESSAGE" value="update_code" />
+    <MESSAGE value="add_module_hide menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="add_module_hide menu" />
   </component>
 </project>
