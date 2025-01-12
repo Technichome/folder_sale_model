@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Technocome Status Folder',
+    'name': 'Technocome Status Folder sale',
     'version': '17.0',
     'summary': '''Technocome,
         class,''',
